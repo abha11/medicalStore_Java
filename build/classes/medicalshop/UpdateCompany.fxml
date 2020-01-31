@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #ab898f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.UpdateCompanyController">
+   <children>
+      <Label layoutX="370.0" layoutY="37.0" prefHeight="103.0" prefWidth="688.0" text="UPDATE COMPANIES" textFill="#6e0c0c">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="70.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="473.0" layoutY="516.0" prefHeight="50.0" prefWidth="450.0" promptText="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPhone" layoutX="473.0" layoutY="445.0" prefHeight="50.0" prefWidth="450.0" promptText="Contact No">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="473.0" layoutY="373.0" prefHeight="50.0" prefWidth="450.0" promptText="Company Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCountry" layoutX="473.0" layoutY="302.0" prefHeight="50.0" prefWidth="450.0" promptText="Company Country">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="473.0" layoutY="231.0" prefHeight="50.0" prefWidth="450.0" promptText="Company Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnUpdate" defaultButton="true" layoutX="473.0" layoutY="611.0" mnemonicParsing="false" onAction="#he" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #6e0c0c;" text="Update" textFill="#ab898f">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="773.0" layoutY="611.0" mnemonicParsing="false" onAction="#he" prefHeight="49.0" prefWidth="150.0" style="-fx-background-color: #6e0c0c;" text="Back" textFill="#ab898f">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

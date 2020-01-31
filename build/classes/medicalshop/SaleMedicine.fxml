@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1350.0" style="-fx-background-color: #72dff8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.SaleMedicineController">
+   <children>
+      <TextField fx:id="txtCustName" layoutX="564.0" layoutY="240.0" prefHeight="33.0" prefWidth="233.0" promptText="Customer Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtPN" layoutX="811.0" layoutY="240.0" prefHeight="33.0" prefWidth="164.0" promptText="Phone Number">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtQuantity" layoutX="989.0" layoutY="240.0" prefHeight="33.0" prefWidth="88.0" promptText="Quantity">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="3.0" prefHeight="106.0" prefWidth="1350.0" style="-fx-background-color: #18307f;" text="HealthCare Pharmacy" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="76.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableMed" layoutX="14.0" layoutY="297.0" prefHeight="387.0" prefWidth="451.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabelPur" layoutX="565.0" layoutY="297.0" prefHeight="320.0" prefWidth="512.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="564.0" layoutY="647.0" mnemonicParsing="false" onAction="#he" prefHeight="33.0" prefWidth="120.0" text="ADD" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="957.0" layoutY="647.0" mnemonicParsing="false" onAction="#he" prefHeight="33.0" prefWidth="120.0" text="BACK" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <TextField fx:id="txtSi" layoutX="14.0" layoutY="240.0" onKeyReleased="#kr" prefHeight="33.0" prefWidth="266.0" promptText="Search Medicine">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label fx:id="labelTotal" layoutX="1223.0" layoutY="297.0" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-radius: 3px;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="btnDelete" layoutX="765.0" layoutY="647.0" mnemonicParsing="false" onAction="#he" prefHeight="33.0" prefWidth="120.0" text="DELETE" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnTotal" layoutX="1134.0" layoutY="348.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="200.0" text="GET TOTAL" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnSave" layoutX="1134.0" layoutY="579.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="200.0" text="GENERATE INVOICE" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnNew" layoutX="1138.0" layoutY="122.0" mnemonicParsing="false" onAction="#he" prefHeight="51.0" prefWidth="200.0" text="NEW CUSTOMER" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="166.0" prefHeight="33.0" prefWidth="451.0" text="Medicines Available:" textFill="#4e5557">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="166.0" prefHeight="33.0" prefWidth="451.0" text="Customer Details:" textFill="#4e5557">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="1112.0" layoutY="297.0" prefHeight="25.0" prefWidth="95.0" text="Total Bill: ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1112.0" layoutY="438.0" prefHeight="25.0" prefWidth="95.0" text="Cash Paid:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1233.0" layoutY="438.0" prefHeight="25.0" prefWidth="119.0" text="Cash Return:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelReturn" layoutX="1236.0" layoutY="472.0" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-radius: 3px;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCash" layoutX="1112.0" layoutY="472.0" prefHeight="25.0" prefWidth="106.0" />
+      <Button fx:id="btnGo" layoutX="1132.0" layoutY="514.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="200.0" text="GO" textFill="#0b2680">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

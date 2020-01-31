@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #934b1e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.MedicineListController">
+   <children>
+      <Label alignment="CENTER" layoutX="538.0" layoutY="14.0" prefHeight="131.0" prefWidth="425.0" text="MEDICINES" textFill="#f8e252">
+         <font>
+            <Font name="Rockwell Condensed" size="96.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabelList" layoutX="452.0" layoutY="301.0" prefHeight="367.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="142.0" layoutY="414.0" mnemonicParsing="false" onAction="#he" prefHeight="49.0" prefWidth="209.0" style="-fx-background-color: #f8e252;" text="ADD" textFill="#934b1e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="142.0" layoutY="550.0" mnemonicParsing="false" onAction="#he" prefHeight="49.0" prefWidth="209.0" style="-fx-background-color: #f8e252;" text="DELETE" textFill="#934b1e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="142.0" layoutY="483.0" mnemonicParsing="false" onAction="#he" prefHeight="49.0" prefWidth="209.0" style="-fx-background-color: #f8e252;" text="UPDATE" textFill="#934b1e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="142.0" layoutY="616.0" mnemonicParsing="false" onAction="#he" prefHeight="49.0" prefWidth="209.0" style="-fx-background-color: #f8e252;" text="BACK" textFill="#934b1e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtSi" layoutX="452.0" layoutY="221.0" onKeyReleased="#kr" prefHeight="39.0" prefWidth="459.0" promptText="Search Here">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="btnShow" layoutX="1081.0" layoutY="219.0" mnemonicParsing="false" onAction="#he" prefHeight="18.0" prefWidth="171.0" style="-fx-background-color: #f8e252;" text="Show All" textFill="#934b1e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbBox" layoutX="142.0" layoutY="221.0" onAction="#cc" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #f8e252;" />
+   </children>
+</AnchorPane>

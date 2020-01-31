@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #1090f1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.FXMLDocumentController">
+   <children>
+      <Label layoutX="372.0" layoutY="14.0" prefHeight="219.0" prefWidth="610.0" text="Medical Shop" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="100.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="424.0" layoutY="342.0" prefHeight="52.0" prefWidth="463.0" promptText="User Name">
+         <font>
+            <Font size="23.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPass" layoutX="424.0" layoutY="430.0" prefHeight="52.0" prefWidth="463.0" promptText="Password">
+         <font>
+            <Font size="23.0" />
+         </font></PasswordField>
+      <Button fx:id="btnReset" layoutX="731.0" layoutY="559.0" mnemonicParsing="false" onAction="#he" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5px; -fx-border-width: 2px;" text="RESET" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#22a6da" />
+         </effect>
+      </Button>
+      <ImageView fx:id="img" fitHeight="219.0" fitWidth="250.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <InnerShadow color="#073968" />
+         </effect>
+         <image>
+            <Image url="@../../../../../Pictures/Saved%20Pictures/plus.jpg" />
+         </image></ImageView>
+      <Button fx:id="btnLogin" defaultButton="true" layoutX="424.0" layoutY="559.0" mnemonicParsing="false" onAction="#he" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5px; -fx-border-width: 2px;" text="LOGIN" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <effect>
+            <InnerShadow color="#22a6da" />
+         </effect>
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

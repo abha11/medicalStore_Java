@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #e0a931;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.InvoiceController">
+   <children>
+      <WebView fx:id="webView" layoutX="149.0" layoutY="125.0" prefHeight="507.0" prefWidth="842.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="251.0" AnchorPane.topAnchor="125.0" />
+      <Label alignment="CENTER" layoutX="494.0" prefHeight="108.0" prefWidth="389.0" text="INVOICE" textFill="#9a0000">
+         <font>
+            <Font name="Algerian" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPrint" layoutX="961.0" layoutY="14.0" mnemonicParsing="false" onAction="#he" prefHeight="45.0" prefWidth="161.0" style="-fx-background-color: #9a0000;" text="PRINT" textFill="#e0a931">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="24.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="1169.0" layoutY="14.0" mnemonicParsing="false" onAction="#he" prefHeight="45.0" prefWidth="161.0" style="-fx-background-color: #9a0000;" text="BACK" textFill="#e0a931">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

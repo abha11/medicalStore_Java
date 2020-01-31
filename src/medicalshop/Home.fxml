@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.HomeController">
+   <children>
+      <Button fx:id="btnMed" layoutX="137.0" layoutY="211.0" mnemonicParsing="false" onAction="#he" prefHeight="145.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 3px; -fx-border-width: 2px; -fx-background-image: url(&quot;Image/medicine.jpg&quot;);" textFill="#b22907">
+         <font>
+            <Font name="Comic Sans MS Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnComp" layoutX="503.0" layoutY="208.0" mnemonicParsing="false" onAction="#he" prefHeight="145.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 3px; -fx-border-width: 2px; -fx-background-image: url(&quot;Image/company.jpg&quot;);" textFill="#a40b0b">
+         <font>
+            <Font name="Comic Sans MS Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAcc" layoutX="867.0" layoutY="208.0" mnemonicParsing="false" onAction="#he" prefHeight="145.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 3px; -fx-border-width: 2px; -fx-background-image: url(&quot;Image/sale.jpg&quot;);" textFill="#a40b0b">
+         <font>
+            <Font name="Comic Sans MS Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCust" layoutX="137.0" layoutY="446.0" mnemonicParsing="false" onAction="#he" prefHeight="145.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 3px; -fx-border-width: 2px; -fx-background-image: url(&quot;Image/customer.jpg&quot;);" />
+      <Button fx:id="btnUsers" layoutX="502.0" layoutY="447.0" mnemonicParsing="false" onAction="#he" prefHeight="145.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 3px; -fx-border-width: 2px; -fx-background-image: url(&quot;Image/user.jpg&quot;);" textFill="#a40b0b">
+         <font>
+            <Font name="Comic Sans MS Bold" size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelWel" alignment="CENTER" layoutX="302.0" layoutY="34.0" prefHeight="101.0" prefWidth="689.0" textFill="WHITE">
+         <font>
+            <Font name="Script MT Bold" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLog" layoutX="865.0" layoutY="446.0" mnemonicParsing="false" onAction="#he" prefHeight="145.0" prefWidth="300.0" style="-fx-border-color: #000000; -fx-border-radius: 3px; -fx-border-width: 2px; -fx-background-image: url(&quot;Image/logout.jpg&quot;);" textFill="WHITE" />
+   </children>
+</AnchorPane>

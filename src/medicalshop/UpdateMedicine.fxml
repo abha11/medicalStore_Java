@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #ffab2f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.UpdateMedicineController">
+   <children>
+      <Button fx:id="btnBack" layoutX="829.0" layoutY="598.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-radius: 2PX; -fx-border-width: 2PX;" text="BACK" textFill="#eb9c2d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="549.0" layoutY="598.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-radius: 2PX; -fx-border-width: 2PX;" text="UPDATE" textFill="#eb9c2d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <TextField fx:id="txtPrice" layoutX="549.0" layoutY="478.0" prefHeight="50.0" prefWidth="400.0" promptText="Price">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="txtQuantity" layoutX="549.0" layoutY="406.0" prefHeight="50.0" prefWidth="400.0" promptText="Quantity">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <ComboBox fx:id="cmbCategory" layoutX="549.0" layoutY="332.0" prefHeight="50.0" prefWidth="400.0" promptText="Category" />
+      <ComboBox fx:id="cmbCompany" layoutX="549.0" layoutY="259.0" prefHeight="50.0" prefWidth="400.0" promptText="Company" />
+      <TextField fx:id="txtMedName" layoutX="549.0" layoutY="185.0" prefHeight="50.0" prefWidth="400.0" promptText="Medicine Name">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="455.0" layoutY="25.0" prefHeight="100.0" prefWidth="611.0" text="UPDATE MEDICINES" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="64.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

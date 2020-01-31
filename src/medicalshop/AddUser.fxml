@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #93460b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.AddUserController">
+   <children>
+      <Label layoutX="551.0" layoutY="29.0" prefHeight="108.0" prefWidth="450.0" text="ADD USER" textFill="#ffcb2e">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="93.0" />
+         </font></Label>
+      <TextField fx:id="txtName" layoutX="551.0" layoutY="232.0" prefHeight="50.0" prefWidth="450.0" promptText="User Name">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPass" layoutX="551.0" layoutY="300.0" prefHeight="50.0" prefWidth="450.0" promptText="Password">
+         <font>
+            <Font size="19.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="txtConPass" layoutX="551.0" layoutY="371.0" prefHeight="50.0" prefWidth="450.0" promptText="Confirm Password">
+         <font>
+            <Font size="19.0" />
+         </font></PasswordField>
+      <TextField fx:id="txtPN" layoutX="551.0" layoutY="435.0" prefHeight="50.0" prefWidth="450.0" promptText="Phone Number">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <ComboBox fx:id="cmbBox" layoutX="551.0" layoutY="501.0" prefHeight="50.0" prefWidth="450.0" promptText="User Category" />
+      <Button fx:id="btnAdd" layoutX="551.0" layoutY="615.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="141.0" style="-fx-background-color: #ffcb2e;" text="Add" textFill="#93460b">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="860.0" layoutY="615.0" mnemonicParsing="false" onAction="#he" prefHeight="37.0" prefWidth="141.0" style="-fx-background-color: #ffcb2e;" text="Back" textFill="#93460b">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

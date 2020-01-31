@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #a79598;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalshop.CustomerListController">
+   <children>
+      <ComboBox fx:id="cmbBox" layoutX="132.0" layoutY="166.0" onAction="#cc" prefHeight="33.0" prefWidth="157.0" style="-fx-background-color: #970000;" />
+      <TableView fx:id="tableList" layoutX="341.0" layoutY="249.0" prefHeight="391.0" prefWidth="852.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="132.0" layoutY="647.0" mnemonicParsing="false" onAction="#he" prefHeight="33.0" prefWidth="137.0" style="-fx-background-color: #970000;" text="BACK" textFill="#a79598">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font></Button>
+      <TextField fx:id="txtSi" layoutX="341.0" layoutY="166.0" onKeyReleased="#kr" prefHeight="33.0" prefWidth="438.0" promptText="Search ">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="545.0" layoutY="14.0" prefHeight="82.0" prefWidth="410.0" text="CUSTOMERS" textFill="#970000">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="74.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnShow" layoutX="1066.0" layoutY="166.0" mnemonicParsing="false" onAction="#he" prefHeight="33.0" prefWidth="127.0" style="-fx-background-color: #970000;" text="SHOW ALL" textFill="#a79598">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
